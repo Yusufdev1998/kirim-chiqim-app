@@ -5,7 +5,6 @@ import {
   Block,
   Sheet,
   Toolbar,
-  Button,
   Link,
   List,
   ListInput,
@@ -67,18 +66,26 @@ const Main = () => {
               <ListInput label="Name" type="text" placeholder="Your name" />
 
               <ListInput
-                label="Password"
-                type="password"
-                placeholder="Your password"
-              />
-
+                label="Gender"
+                type="select"
+                dropdown
+                defaultValue="Male"
+                placeholder="Please choose..."
+              >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </ListInput>
               <ListInput
-                label="E-mail"
-                type="email"
-                placeholder="Your e-mail"
+                label="Date time"
+                type="datetime-local"
+                placeholder="Please choose..."
               />
-
-              <ListInput label="URL" type="url" placeholder="URL" />
+              <ListInput
+                label="Textarea"
+                type="textarea"
+                placeholder="Bio"
+                inputClassName="!h-20 resize-none"
+              />
             </List>
           </Block>
         </Sheet>
