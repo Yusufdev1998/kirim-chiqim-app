@@ -12,13 +12,14 @@ const HomeResult = () => {
       style={{ padding: 0 }}
       header={
         <div className="text-center">
-          01-{month}-{year} {"->"} {lastDay}-{month}-{year}
+          01-<span className="underline">{month}</span>-{year} {"->"} {lastDay}-
+          <span className="underline">{month}</span>-{year}
         </div>
       }
       headerDivider
     >
       <div className="grid grid-cols-3 gap-2">
-        <div className="text-green-500 border p-2 border-slate-300 rounded shadow-sm flex items-center flex-col">
+        <div className="text-green-500  border p-2 border-slate-300 rounded shadow-sm flex items-center flex-col">
           <span className="text-xl">Kirim</span>
           <span>20,000,000</span>
         </div>

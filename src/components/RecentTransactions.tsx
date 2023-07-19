@@ -9,7 +9,7 @@ const RecentTransactions = () => {
       <BlockTitle>Yaqindagi transaksiyalar</BlockTitle>
       <List strongIos outlineIos>
         <ListItem
-          media={<GiPayMoney className="text-red-500" />}
+          media={<GiPayMoney className="text-red-500 text-2xl" />}
           title="Ovqatga"
           subtitle="naqd"
           dividers="true"
@@ -17,7 +17,7 @@ const RecentTransactions = () => {
           header="01.03.2023"
         />
         <ListItem
-          media={<GiReceiveMoney className="text-green-500" />}
+          media={<GiReceiveMoney className="text-green-500 text-2xl" />}
           title="Oylik"
           subtitle="plastik"
           after={<span className="text-green-500">20,000</span>}

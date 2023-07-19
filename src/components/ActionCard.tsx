@@ -9,11 +9,13 @@ interface IActionCard {
   icon: React.ReactElement;
   title: string;
   bg: "green" | "red" | "orange" | "blue";
+  onClick?: () => void;
 }
 
-const ActionCard: React.FC<IActionCard> = ({ icon, title, bg }) => {
+const ActionCard: React.FC<IActionCard> = ({ icon, title, bg, onClick }) => {
   return (
     <div
+      onClick={onClick}
       style={{ background: Bg[bg] }}
       className={`flex p-2 rounded shadow-lg text-2xl text-white justify-center items-center flex-col`}
     >
